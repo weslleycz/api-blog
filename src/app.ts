@@ -3,7 +3,6 @@ import * as dotenv from "dotenv";
 import express from "express";
 import helmet from "helmet";
 import { router } from "./routes";
-
 const app = express();
 
 dotenv.config();
@@ -25,6 +24,6 @@ app.use(router);
 
 export { app };
 
-app.listen(process.env.PORT, () => {
-    console.log(`🚀 Server started on port:${process.env.PORT}`);
+app.listen(process.env.PORT, async () =>  {
+  await console.log(`🚀 Server started on port:${process.env.PORT}`);
 });
