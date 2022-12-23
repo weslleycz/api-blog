@@ -3,7 +3,6 @@ import { Request, Response } from "express";
 import { CreateUserDto } from "../../dtos/user.dto";
 import { prismaClient } from "../../services/prismaClient";
 import { ErrorPrisma } from "../../types/ErrorPrisma";
-import fs from "node:fs";
 
 class Create {
     public async handle(req: Request, res: Response) {

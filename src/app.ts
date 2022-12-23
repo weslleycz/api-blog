@@ -24,6 +24,6 @@ app.use(router);
 
 export { app };
 
-app.listen(process.env.PORT, async () =>  {
-  await console.log(`🚀 Server started on port:${process.env.PORT}`);
+app.listen(process.env.PORT, async () => {
+   // await console.log(`🚀 Server started on port:${process.env.PORT}`);
 });

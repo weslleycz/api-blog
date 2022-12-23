@@ -1,14 +1,3 @@
-/*
-  Warnings:
-
-  - You are about to drop the `User` table. If the table is not empty, all the data it contains will be lost.
-
-*/
--- DropTable
-PRAGMA foreign_keys=off;
-DROP TABLE "User";
-PRAGMA foreign_keys=on;
-
 -- CreateTable
 CREATE TABLE "Users" (
     "id" TEXT NOT NULL PRIMARY KEY,
@@ -20,7 +9,7 @@ CREATE TABLE "Users" (
 
 -- CreateTable
 CREATE TABLE "Posts" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "title" TEXT NOT NULL,
     "content" TEXT,
     "userId" TEXT,

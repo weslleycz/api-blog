@@ -5,6 +5,6 @@ import { CreateUserDto } from "./dtos/user.dto";
 
 const router = Router();
 
-router.post("/user/create", makeValidateBody(CreateUserDto), Create.handle);
+router.post("/api/user/create", makeValidateBody(CreateUserDto), Create.handle);
 
 export { router };
